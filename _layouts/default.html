@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<htmlxmlns="http://www.w3.org/1999/xhtml">
+	<head profile="http://www.w3.org/2005/10/profile">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>{{ page.title }}</title>
+		<link rel="alternate" type="application/atom+xml" href="@root_path/?/feed/">
+    	<link rel="icon" type="image/x-icon" href="{{ page.root }}assets/icons/favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Clicker+Script|EB+Garamond&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="{{ page.root }}assets/css/mpa.css" media="screen">
+		<link href="{{ page.root }}assets/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+        <link href="{{ page.root }}assets/SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="{{ page.root }}assets/css/chosen.css" />
+	</head>
+	<body OnLoad="document.searchForm.searchText.focus();">
+    	<div class="shadow" id="middlebar">
+            <table style="margin: 0 auto;" width="900px">
+                <tr>
+                    <td width="70%">
+                        <a href="/"><img src="{{ page.root }}assets/images/mpa-logo.png" alt="michael albright"></a>
+                    </td>
+                    <td width="5%">
+                        <img width="40"src="{{ page.root }}assets/icons/world-icon.png">
+                    </td>
+                    <td width="5%">
+                      <a href="{{ page.root }}">english</a>
+                    </td>
+                    <td width="5%">
+                        <a href="{{ page.root }}es">espa&ntilde;ol</a>
+                    </td>
+                    <td width="5%">
+                        <a href="{{ page.root }}pt">portugu&ecirc;s</a>
+                    </td>
+                </tr>
+            </table>
+      		    	
+        <ul id="MenuBar1" class="MenuBarHorizontal">
+          <li>
+          		<a class="bottomborder" href="{{ page.root }}blog">blog</a>
+          </li>
+
+          <li>
+                <a class="bottomborder" href="#">find me</a>
+                    <ul>
+                        <li>
+                            <a style="color:#000000" href="http://www.facebook.com/profile.php?id=1008007812">facebook</a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com/partidocontra">twitter</a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/pub/michael-albright/1a/172/124">linkedin</a>
+                        </li>
+                   	</ul>
+          </li>
+          <li>
+              <a class="bottomborder" class="MenuBarItemSubmenu" href="#">services</a>
+              <ul>
+              	<li>
+                  <a href="{{ page.root }}translation">translation</a>
+                </li>
+              </ul>
+        </li>
+      	<li>
+              <a class="bottomborder" class="MenuBarItemSubmenu" href="#">memberships</a>
+              <ul>
+                  <li>
+                      <a href="http://www.aamft.org">aamft</a>
+                  </li>
+                  <li>
+				      <a href="http://www.camft.org">camft</a>
+                  </li>              	
+                  <li>
+                      <a href="http://www.phikappaphi.org/web/">phi kappa phi</a>
+                  </li>
+             	<li>
+                	<a href="http://www.goldenkey.org/">golden key</a>
+                </li>
+                  <li>
+                      <a href="http://alumni.byu.edu">byu alumni</a>
+                  </li>
+                  <li>
+                      <a href="http://www.lds.org">lds</a>
+                  </li>
+              </ul>
+        </li>
+        <li>
+        	<a class="bottomborder" class="MenuBarItemSubmenu" href="#">projects</a>
+              <ul>
+                  <li>
+                      <a href="http://www.familytherapedia.com">familytherapedia</a>
+                  </li>
+                  <li>
+                      <a href="http://www.albrightfamily.org">albrightfamily.org</a>
+                  </li>
+              </ul>
+		</li>
+		<li>
+			<a class="bottomborder" href="&#109&#097&#105&#108&#116&#111&#058&#109&#064&#109&#112&#097&#046&#109&#101">contact me</a>
+        </li>
+
+          <li>
+                <a class="bottomborder" href="{{ page.root }}aboutme">about me</a>
+          </li>
+        </ul>
+        <br />
+        <br />
+        
+        {{ content }}
+        
+        </div>
+		<script src="{{ page.root }}assets/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+	    <script type="text/javascript">
+	        var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", 
+	        {imgDown:"{{ page.root }}assets/SpryAssets/SpryMenuBarDownHover.gif", 
+	        imgRight:"{{ page.root }}assets/SpryAssets/SpryMenuBarRightHover.gif"});
+	    </script>
+	    <script type="text/javascript">
+			var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2",
+			{imgRight:"{{ page.root }}assets/SpryAssets/SpryMenuBarRightHover.gif"});
+		</script>      
+	</body>
+</html>

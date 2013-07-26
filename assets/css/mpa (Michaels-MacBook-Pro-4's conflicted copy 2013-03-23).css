@@ -1,0 +1,42 @@
+h1, h2 	{
+	font-family: 'Clicker Script', cursive;
+	text-shadow: 4px 4px 4px #aaa;
+	}
+body 	{
+	font-family: 'EB Garamond', serif;
+	}
+A {text-decoration: none;
+	}
+a:visited {
+	COLOR: #B8B8B8;
+	}
+a:hover {
+	COLOR: #FF0000; 
+	}
+a:active {
+	COLOR: #0000FF;
+	}
+table#icons {
+	top: 0px;
+	right: 0px;
+	position:absolute;
+	}
+html { 
+	background-color: #B2C0C3; 
+	}
+.mainimage {
+	margin: 50px auto; 
+	padding: 20px; 
+	}
+.shadow {
+	-moz-box-shadow: 0 0 20px black; 
+	-webkit-box-shadow: 0 0 20px black; 
+	box-shadow: 0 0 20px black;
+	}
+div#middlebar {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 150 0; /* the bottom margin is the negative value of the footer's height */
+	background-color:#FFFFFF
+	}

@@ -1,0 +1,130 @@
+h1, h2, h3, h4, h5, h6 	{
+	//font-family: 'Clicker Script', cursive;
+	//text-shadow: 4px 4px 4px #aaa;
+	font-family: 'EB Garamond', serif;
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+body 	{
+	font-family: 'EB Garamond', serif;
+	padding-top: 1px;
+    margin-top: -1px;
+	padding-botttom: 1px;
+    margin-bottom: -1px;
+	height: 100%;
+	}
+A {
+	COLOR: #000000;
+	text-decoration: none;
+	}
+a:visited {
+	COLOR: #000000;
+	}
+a:hover {
+	COLOR: #FF0000; 
+	}
+a:active {
+	COLOR: #0000FF;
+	}
+html { 
+	//background-color: #66CCFF;
+	background-color: #A6A6A6;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+	background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent); 
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	background-size: 50px 50px;
+	height: 100%;
+	}
+.mainimage {
+	margin: 70px auto; 
+	padding: 20px; 
+	}
+.shadow {
+	-moz-box-shadow: 0 0 5px black; 
+	-webkit-box-shadow: 0 0 5px black; 
+	box-shadow: 0 0 5px black;
+	}
+div#middlebar {
+	min-height: 100%;
+	width: 900px;
+	height: auto !important;
+	margin: 0 auto 0; /* the bottom margin is the negative value of the footer's height */
+	background-color:#FFFFFF;
+	overflow: auto; /* makes floating images stay in the div */
+	}
+p {
+	margin: 0px 10px 1em;
+	color:#999;
+	}
+p a {
+	color:#000000;
+	font-weight:900;
+	}
+.mainimage1 {
+	padding: 20px; 
+	}
+.clear{ 
+	clear: both;
+	}
+	
+/*blog*/
+
+.link_next {
+	max-width: 50%;
+	float: right;
+
+}
+
+.link_prev {
+	max-width: 50%;
+	float: left;
+
+}
+
+.video {
+padding: 10px;
+}
+
+.sm-img {
+max-height: 425px;
+width: auto;
+padding: 10px;
+}
+
+.sm-img {
+height: auto;
+max-width: 425px;
+padding: 10px;
+}
+
+.submit {
+padding: 0;
+border: none;
+background: none;
+}
+
+input[type=text] {
+		font-family: 'EB Garamond', serif;
+		font-size: 16px;
+		padding-left: 5px;
+    }
+div.landing-column ul {
+list-style-type: none;
+padding: 0px;
+}
+div.landing-column li {
+padding: 5px;
+height: 100px;
+text-align: center;
+}
+div.landing-column {
+float: left;
+width: 20%;
+}
+div.landing-column img {
+width: 80%;
+border: 0px;
+}

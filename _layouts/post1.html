@@ -1,0 +1,25 @@
+:head
+:body
+<div>
+    <div>
+      <h1><a href="@root_path">@title</a></h1>
+      <p>@date</p>
+      :video
+      :html
+      :images
+      @content
+      :pdfs
+    </div>
+    <div>
+      if $siblings do
+        :previous-page
+        :next-page
+      endif
+    </div>
+    <br />
+    <hr>
+    <p><span class="link_prev">&copy; Copyright @name @current_year <a class="atom-rss" href="@root_path/?/feed/">RSS</a></span>
+        <span class="link_next"><em>Content managed by <a href="http://www.staceyapp.com">stacey</a></em></span></p>
+</div>
+    <script src="@root_path/public/docs/js/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+:close
