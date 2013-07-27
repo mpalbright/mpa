@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-en
 title:  "Welcome to Jekyll!"
 date:   2013-07-24 21:24:57
 intro: blah blah blah blah, blah blah blah.
