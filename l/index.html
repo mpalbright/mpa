@@ -1,16 +1,138 @@
 ---
-layout: default
+layout: default-en
 title: landing
 root: ../
----
-<link rel="stylesheet" href="../assets/css/chosen.css" />
-<style>
-input[type=text] {
-		font-family: 'EB Garamond', serif;
-		font-size: 16px;
-		padding-left: 5px;
+css-link: <link rel="stylesheet" href="../assets/css/chosen.css"> |
+style: |
+  input[type=text] {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    padding-left: 5px;
+  }
+focus: OnLoad="document.searchForm.searchText.focus();"
+script: |
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"></script>
+  <script src="../assets/js/chosen.proto.js"></script>
+  <script>
+    document.observe('dom:loaded', function(evt) {
+    var select, selects, _i, _len, _results;
+    if (Prototype.Browser.IE && (Prototype.BrowserFeatures['Version'] === 6 || Prototype.BrowserFeatures['Version'] === 7)) {
+      return;
     }
-</style>	
+    selects = $$(".chzn-select");
+    _results = [];
+    for (_i = 0, _len = selects.length; _i < _len; _i++) {
+      select = selects[_i];
+      _results.push(new Chosen(select));
+    }
+    deselects = $$(".chzn-select-deselect");
+    for (_i = 0, _len = deselects.length; _i < _len; _i++) {
+      select = deselects[_i];
+      _results.push(new Chosen(select,{allow_single_deselect:true}));
+    }
+    return _results;
+    });
+  </script>
+  <script language="JavaScript">
+    <!--
+    
+    //
+    // Script by Jari Aarniala [www.mbnet.fi/~foo -- foo@mbnet.fi]
+    //
+    // This script makes it easy to choose with which search engine
+    // you`d like to search the net. You may use this if you keep this
+    // text here...
+    //
+    
+    function startSearch(){
+        searchString = document.searchForm.searchText.value; 
+        if(searchString != ""){
+        searchEngine = document.searchForm.whichEngine.selectedIndex + 1;
+        finalSearchString = "";
+        }
+        if(searchEngine == 1){
+        finalSearchString = "https://www.google.com/search?q=" + searchString;
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 2){
+        finalSearchString = "https://www.google.com/search?q=" + searchString;
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 3){
+        finalSearchString1 = "http://www.wordreference.com/pten/" + searchString;
+        finalSearchString2 = "http://dictionary.reverso.net/portuguese-english/" + searchString;
+        finalSearchString3 = "http://www.linguee.com/english-portuguese/search?source=portuguese&query=" + searchString;
+        finalSearchString4 = "http://en.bab.la/dictionary/portuguese-english/" + searchString;
+        finalSearchString5 = "http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&palavra=" + searchString;
+        finalSearchString6 = "http://www.proz.com/?sp=asearch&term=" + searchString + "&from=por&to=eng&DICengines=KudoZ|Ectaco|IATE|Logos&MTengines=GoogleTrans|Intertran&SEARCHengines=Google|Clusty|MSN|WebCorp|Alltheweb|Altavista|Lycos|Yahoo|Teoma|Metacrawler&bidir=0&SE_lang=0&entity_id=11&UsingIE=1";
+        finalSearchString7 = "http://translate.google.com/#pt/en/" + searchString;
+        finalSearchString8 = "http://translation.babylon.com/portuguese/to-english/" + searchString;
+        finalSearchString9 = "http://pt-en.dict.cc/?s=" + searchString;
+        finalSearchString10 = "http://en.pons.eu/dict/search/results/?q=" + searchString + "&l=enpt&in=&lf=pt";
+        window.open(finalSearchString1, '_blank');
+        window.open(finalSearchString2, '_blank');
+        window.open(finalSearchString3, '_blank');
+        window.open(finalSearchString4, '_blank');
+        window.open(finalSearchString5, '_blank');
+        window.open(finalSearchString6, '_blank');
+        window.open(finalSearchString7, '_blank');
+        window.open(finalSearchString8, '_blank');
+        window.open(finalSearchString9, '_blank');
+        window.open(finalSearchString10, '_blank');
+        }
+        if(searchEngine == 4){
+        finalSearchString = "http://www.wordreference.com/pten/" + searchString;
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 5){
+        finalSearchString = "http://dictionary.reverso.net/portuguese-english/" + searchString;
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 6){
+        finalSearchString = "http://www.linguee.com/english-portuguese/search?source=portuguese&query=" + searchString;
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 7){
+        finalSearchString = "http://en.bab.la/dictionary/portuguese-english/" + searchString;
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 8){
+        finalSearchString = "http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&palavra=" + searchString;
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 9){
+        finalSearchString = "http://www.proz.com/?sp=asearch&term=" + searchString + "&from=por&to=eng&DICengines=KudoZ|Ectaco|IATE|Logos&MTengines=GoogleTrans|Intertran&SEARCHengines=Google|Clusty|MSN|WebCorp|Alltheweb|Altavista|Lycos|Yahoo|Teoma|Metacrawler&bidir=0&SE_lang=0&entity_id=11&UsingIE=1";
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 10){
+        finalSearchString = "http://translate.google.com/#pt/en/" + searchString;
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 11){
+        finalSearchString = "http://translation.babylon.com/portuguese/to-english/" + searchString;
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 12){
+        finalSearchString = "http://pt-en.dict.cc/?s=" + searchString;
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 13){
+        finalSearchString = "http://en.pons.eu/dict/search/results/?q=" + searchString + "&l=enpt&in=&lf=pt";
+        window.open(finalSearchString);
+        }
+        if(searchEngine == 14){
+        finalSearchString1 = "http://www.wordreference.com/pten/" + searchString;
+        finalSearchString2 = "http://dictionary.reverso.net/portuguese-english/" + searchString;
+        finalSearchString3 = "http://www.linguee.com/english-portuguese/search?source=portuguese&query=" + searchString;
+        window.open(finalSearchString1, '_blank');
+        window.open(finalSearchString2, '_blank');
+        window.open(finalSearchString3, '_blank');
+        }
+    }
+    // -->
+  </script>
+---
     <h1>bookmarks</h1>
    	<div align="center" class="side-by-side clearfix">
 	    <form name="searchForm" onsubmit="startSearch()">
@@ -178,124 +300,3 @@ input[type=text] {
             <td align="center" height="50px" width="20%"></td>
         </tr>
 	</table>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js" type="text/javascript"></script>
-<script src="../assets/js/chosen.proto.js" type="text/javascript"></script>
-<script type="text/javascript">
-    document.observe('dom:loaded', function(evt) {
-    var select, selects, _i, _len, _results;
-    if (Prototype.Browser.IE && (Prototype.BrowserFeatures['Version'] === 6 || Prototype.BrowserFeatures['Version'] === 7)) {
-      return;
-    }
-    selects = $$(".chzn-select");
-    _results = [];
-    for (_i = 0, _len = selects.length; _i < _len; _i++) {
-      select = selects[_i];
-      _results.push(new Chosen(select));
-    }
-    deselects = $$(".chzn-select-deselect");
-    for (_i = 0, _len = deselects.length; _i < _len; _i++) {
-      select = deselects[_i];
-      _results.push(new Chosen(select,{allow_single_deselect:true}));
-    }
-    return _results;
-    });
-</script>
-<script language="JavaScript">
-    <!--
-    
-    //
-    // Script by Jari Aarniala [www.mbnet.fi/~foo -- foo@mbnet.fi]
-    //
-    // This script makes it easy to choose with which search engine
-    // you`d like to search the net. You may use this if you keep this
-    // text here...
-    //
-    
-    function startSearch(){
-        searchString = document.searchForm.searchText.value; 
-        if(searchString != ""){
-        searchEngine = document.searchForm.whichEngine.selectedIndex + 1;
-        finalSearchString = "";
-        }
-        if(searchEngine == 1){
-        finalSearchString = "https://www.google.com/search?q=" + searchString;
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 2){
-        finalSearchString = "https://www.google.com/search?q=" + searchString;
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 3){
-        finalSearchString1 = "http://www.wordreference.com/pten/" + searchString;
-        finalSearchString2 = "http://dictionary.reverso.net/portuguese-english/" + searchString;
-        finalSearchString3 = "http://www.linguee.com/english-portuguese/search?source=portuguese&query=" + searchString;
-        finalSearchString4 = "http://en.bab.la/dictionary/portuguese-english/" + searchString;
-        finalSearchString5 = "http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&palavra=" + searchString;
-        finalSearchString6 = "http://www.proz.com/?sp=asearch&term=" + searchString + "&from=por&to=eng&DICengines=KudoZ|Ectaco|IATE|Logos&MTengines=GoogleTrans|Intertran&SEARCHengines=Google|Clusty|MSN|WebCorp|Alltheweb|Altavista|Lycos|Yahoo|Teoma|Metacrawler&bidir=0&SE_lang=0&entity_id=11&UsingIE=1";
-        finalSearchString7 = "http://translate.google.com/#pt/en/" + searchString;
-        finalSearchString8 = "http://translation.babylon.com/portuguese/to-english/" + searchString;
-        finalSearchString9 = "http://pt-en.dict.cc/?s=" + searchString;
-        finalSearchString10 = "http://en.pons.eu/dict/search/results/?q=" + searchString + "&l=enpt&in=&lf=pt";
-        window.open(finalSearchString1, '_blank');
-        window.open(finalSearchString2, '_blank');
-        window.open(finalSearchString3, '_blank');
-        window.open(finalSearchString4, '_blank');
-        window.open(finalSearchString5, '_blank');
-        window.open(finalSearchString6, '_blank');
-        window.open(finalSearchString7, '_blank');
-        window.open(finalSearchString8, '_blank');
-        window.open(finalSearchString9, '_blank');
-        window.open(finalSearchString10, '_blank');
-        }
-        if(searchEngine == 4){
-        finalSearchString = "http://www.wordreference.com/pten/" + searchString;
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 5){
-        finalSearchString = "http://dictionary.reverso.net/portuguese-english/" + searchString;
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 6){
-        finalSearchString = "http://www.linguee.com/english-portuguese/search?source=portuguese&query=" + searchString;
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 7){
-        finalSearchString = "http://en.bab.la/dictionary/portuguese-english/" + searchString;
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 8){
-        finalSearchString = "http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&palavra=" + searchString;
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 9){
-        finalSearchString = "http://www.proz.com/?sp=asearch&term=" + searchString + "&from=por&to=eng&DICengines=KudoZ|Ectaco|IATE|Logos&MTengines=GoogleTrans|Intertran&SEARCHengines=Google|Clusty|MSN|WebCorp|Alltheweb|Altavista|Lycos|Yahoo|Teoma|Metacrawler&bidir=0&SE_lang=0&entity_id=11&UsingIE=1";
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 10){
-        finalSearchString = "http://translate.google.com/#pt/en/" + searchString;
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 11){
-        finalSearchString = "http://translation.babylon.com/portuguese/to-english/" + searchString;
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 12){
-        finalSearchString = "http://pt-en.dict.cc/?s=" + searchString;
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 13){
-        finalSearchString = "http://en.pons.eu/dict/search/results/?q=" + searchString + "&l=enpt&in=&lf=pt";
-        window.open(finalSearchString);
-        }
-        if(searchEngine == 14){
-        finalSearchString1 = "http://www.wordreference.com/pten/" + searchString;
-        finalSearchString2 = "http://dictionary.reverso.net/portuguese-english/" + searchString;
-        finalSearchString3 = "http://www.linguee.com/english-portuguese/search?source=portuguese&query=" + searchString;
-        window.open(finalSearchString1, '_blank');
-        window.open(finalSearchString2, '_blank');
-        window.open(finalSearchString3, '_blank');
-        }
-    }
-    // -->
-</script>
