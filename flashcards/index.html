@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <script type="text/javascript">    
+            window.onload= function() {
+                var divs= document.getElementsByTagName('div');
+                for (var i= divs.length; i-->0;)
+                    if (divs[i].className==='question')
+                        Toggler(divs[i]);
+            };
+            
+            function Toggler(div) {
+                var state= false;
+                var toggled= div.nextSibling;
+                while (toggled.nodeType!==1)
+                    toggled= toggled.nextSibling;
+            
+                div.onclick= function() {
+                    state= !state;
+                    toggled.style.display= state? 'block' : 'none';
+                };
+            };
+
+        </script>
+        <style>
+            div.flashcard {
+                margin: 0 10px 10px 0;
+            }
+            div.flashcard div.question {
+                background-color:#ddd;
+                width: 400px;        
+                padding: 5px;    
+                cursor: hand;    
+                cursor: pointer;
+            }
+            div.flashcard div.answer {
+                background-color:#eee;
+                width: 400px;
+                padding: 5px;    
+                display: none;        
+            }                
+        </style>
+    </head>
+<body>
+<h3>Example Cards</h3>
+    <div class="flashcard">
+    <div class="question">Who was Wagner?</div>
+    <div class="answer">German composer, conductor, theatre director and essayist, primarily known for his operas (or "music dramas", as they were later called). Unlike most other opera composers, Wagner wrote both the music and libretto for every one of his works.</div>
+    </div>
+    
+    <div class="flashcard">
+    <div class="question">Who was Thalberg?</div>
+    <div class="answer">a composer and one of the most distinguished virtuoso pianists of the 19th century.</div>
+    </div>
+<h3>Family Systems Theory</h3>
+    <div class="flashcard">
+	<div class="question">Who created family systems theory?</div>
+	<div class="answer">Murray Bowen</div>
+	</div>
+
+</body>
+</html>
