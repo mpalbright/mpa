@@ -2,8 +2,6 @@ h1, h2, h3, h4, h5, h6 	{
 	//font-family: 'Clicker Script', cursive;
 	//text-shadow: 4px 4px 4px #aaa;
 	font-family: 'EB Garamond', serif;
-	margin-left: 10px;
-	margin-right: 10px;
 	}
 body 	{
 	font-family: 'EB Garamond', serif;
@@ -56,7 +54,6 @@ div#middlebar {
 	overflow: auto; /* makes floating images stay in the div */
 	}
 p {
-	margin: 0px 10px 1em;
 	color:#999;
 	}
 p a {
@@ -127,4 +124,7 @@ width: 20%;
 div.landing-column img {
 width: 80%;
 border: 0px;
+}
+article {
+margin: 0px 10px 1em;
 }
