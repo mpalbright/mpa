@@ -3,13 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>{{ page.title }}</title>
-    	<link rel="icon" type="image/x-icon" href="{{ page.root }}assets/icons/favicon.ico">
+    	<link rel="icon" type="image/x-icon" href="{{ page.root }}icons/favicon.ico">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Clicker+Script|EB+Garamond&subset=latin,latin-ext">
-		<link rel="stylesheet" href="{{ page.root }}assets/css/mpa.css" media="screen">
-		<link rel="stylesheet" href="{{ page.root }}assets/SpryAssets/SpryMenuBarHorizontal.css">
-		{{ page.css-link }}
+		<link rel="stylesheet" href="{{ page.root }}css/mpa.css" media="screen">
+		<link rel="stylesheet" href="{{ page.root }}SpryAssets/SpryMenuBarHorizontal.css">
+		{% if page.css-link %}
+			{{ page.css-link }}
+		{% endif %}
 		{% if page.style %}
-			<style type="text/css">
+			<style>
      			{{ page.style }}
 			</style>
 		{% endif %}
@@ -20,10 +22,10 @@
 	            <table style="margin: 0 auto;" width="900px">
 	                <tr>
 	                    <td width="70%">
-	                        <a href="/"><img src="{{ page.root }}assets/images/mpa-logo.png" alt="michael albright"></a>
+	                        <a href="/"><img src="{{ page.root }}images/mpa-logo.png" alt="michael albright"></a>
 	                    </td>
 	                    <td width="5%">
-	                        <img width="40"src="{{ page.root }}assets/icons/world-icon.png">
+	                        <img width="40"src="{{ page.root }}icons/world-icon.png">
 	                    </td>
 	                    <td width="5%">
 	                      <a href="{{ page.root }}">english</a>
@@ -112,12 +114,14 @@
         		{{ content }}
         	</article>
         </div>
-		<script src="{{ page.root }}assets/SpryAssets/SpryMenuBar.js"></script>
+		<script src="{{ page.root }}SprySpryMenuBar.js"></script>
 	    <script>
 	        var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", 
-	        {imgDown:"{{ page.root }}assets/SpryAssets/SpryMenuBarDownHover.gif", 
-	        imgRight:"{{ page.root }}assets/SpryAssets/SpryMenuBarRightHover.gif"});
+	        {imgDown:"{{ page.root }}SprySpryMenuBarDownHover.gif", 
+	        imgRight:"{{ page.root }}SprySpryMenuBarRightHover.gif"});
 	    </script>
-	    {{ page.script }}     
+		{% if page.script %}
+		    {{ page.script }} 
+		{% endif %}    
 	</body>
 </html>

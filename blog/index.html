@@ -3,11 +3,10 @@ layout: default-en
 title: blog
 root: ../
 ---
-
-  <h1>Blog Posts</h1>
-    {% for post in site.posts %}
-	      	<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-	      	<p>{{ post.date | date_to_string }}</p>
-	      	<p>{{ post.intro }}</p>
-	      	<p><a href="{{ post.url }}">Read more...</a></p>
-    {% endfor %}
+<h1>Blog Posts</h1>
+{% for post in site.posts %}
+      	<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+      	<p>{{ post.date | date_to_long_string }}</p>
+      	<p>{{ post.intro }}</p>
+      	<p><a href="{{ post.url }}">Read more...</a></p>
+{% endfor %}

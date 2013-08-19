@@ -2,6 +2,7 @@
 layout: post-en
 title:  "Welcome to Jekyll!"
 date:   2013-07-25 21:24:57
+youtube: <object width="560" height="315"><param name="movie" value="//www.youtube.com/v/zuBSRC1zpHw?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/zuBSRC1zpHw?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 intro: blah blah blah blah, blah blah blah.
 ---
 
