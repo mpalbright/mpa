@@ -3,8 +3,6 @@ layout: post-en
 title: Productive Avoidance of Schoolwork
 author: Michael Albright
 date: 2013-07-15
-image: logo2.png
-image-alt: test image
 intro: I have two large papers to do in less than two weeks. One is on a group process class that I had during a week in June, and the other is about conflict resolution. I am really torturing myself about these assignments.
 ---
 I have two large papers to do in less than two weeks. One is on a group process class that I had during a week in June, and the other is about conflict resolution. I am really torturing myself about these assignments.

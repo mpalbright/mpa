@@ -114,11 +114,11 @@
         		{{ content }}
         	</article>
         </div>
-		<script src="{{ page.root }}SprySpryMenuBar.js"></script>
+		<script src="{{ page.root }}SpryAssets/SpryMenuBar.js"></script>
 	    <script>
 	        var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", 
-	        {imgDown:"{{ page.root }}SprySpryMenuBarDownHover.gif", 
-	        imgRight:"{{ page.root }}SprySpryMenuBarRightHover.gif"});
+	        {imgDown:"{{ page.root }}SpryAssets/SpryMenuBarDownHover.gif", 
+	        imgRight:"{{ page.root }}SpryAssets/SpryMenuBarRightHover.gif"});
 	    </script>
 		{% if page.script %}
 		    {{ page.script }} 

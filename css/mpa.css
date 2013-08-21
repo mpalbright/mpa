@@ -131,11 +131,8 @@ margin: 0px 10px 1em;
 .sm-img {
 max-height: 425px;
 width: auto;
-padding: 10px;
 }
-
 .sm-img {
 height: auto;
 max-width: 425px;
-padding: 10px;
 }

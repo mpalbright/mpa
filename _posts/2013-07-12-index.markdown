@@ -1,9 +1,0 @@
----
-layout: post-en
-title:  Testing mp4
-date:   2013-07-12 21:24:57
-intro: Trying to see if this mp4 thing works
-video: 2013-04-06 10.32.51.mp4
----
-
-Trying to see if this mp4 thing works

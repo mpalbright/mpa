@@ -10,10 +10,12 @@ root: ../../../../
 	{{ page.youtube }}
 {% endif %}
 {% if page.video %}
-	<video src="../../../../../videos/{{ page.video }}" controls>
+	<video width="560" height="315" controls>
+		<source src="../../../../../videos/{{ page.video }}">
+		Your browser does not support the video tag. Upgrade your browser and try again.
 	</video>
 {% endif %}
-<p>{{ page.date | date_to_string }}</p>
+<p>{{ page.date | date_to_long_string }}</p>
 <div>
 {{ content }}
 </div>
