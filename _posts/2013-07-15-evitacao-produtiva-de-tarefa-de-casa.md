@@ -3,6 +3,7 @@ layout: post-pt
 title: Evitação Produtiva de Tarefa de Casa
 author: Michael Albright
 date: 2013-07-15
+categories : [pt, blog]
 intro: Eu tenho duas grandes redações para entregar em menos que duas semanas. Uma é para uma classe de processos de grupos que eu fiz durante uma semana em junho, e a outra é sobre resolução de conflict. Estou me torturando mesmo com estas tarefas.
 ---
 Eu tenho duas grandes redações para entregar em menos que duas semanas. Uma é para uma classe de processos de grupos que eu fiz durante uma semana em junho, e a outra é sobre resolução de conflict. Estou me torturando mesmo com estas tarefas.

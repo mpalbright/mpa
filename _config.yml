@@ -1,4 +1,4 @@
 auto: true
 server: true
 markdown: rdiscount
-permalink: /blog/:year/:month/:day/
+permalink: /:categories/:year/:month/:day/

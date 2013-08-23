@@ -3,6 +3,7 @@ layout: post-en
 title: Reflections About Personal Change
 author: Michael Albright
 date: 2013-08-21 20:36:34
+categories : [blog]
 intro: One thing that I've been thinking about lately is personal change. There were two things in particular that made me reflect more about this subject. First of all, while studying at BYU, I learned about transitional characters. These are people who have overcome their past and revolve not repeat the bad family patterns in which they were raised. Also, more recently in my Family and Divorce Mediation class, we were discussing the different approaches to conflict that people have. In both cases, the professors noted that this change, whether it be changing family patterns or how we handle conflict, requires...
 ---
 One thing that I've been thinking about lately is personal change. There were two things in particular that made me reflect more about this subject. First of all, while studying at BYU, I learned about [transitional characters][1]. These are people who have overcome their past and revolve not repeat the bad family patterns in which they were raised. Also, more recently in my Family and Divorce Mediation class, we were discussing the different approaches to conflict that people have. In both cases, the professors noted that this change, whether it be changing family patterns or how we handle conflict, requires being conscious of what we are currently doing and making an intentional decision to act differently.
