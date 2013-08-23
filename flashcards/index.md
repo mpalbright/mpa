@@ -5,6 +5,7 @@ root: ../
 ---
 flashcards
 ==========
-[scripture-mastery/bom][1]
+Hello there
+[Book of Mormon Scripture Mastery][1]
 
-[1]: Book of Mormon Scripture Mastery
+[1]: scripture-mastery/bom
