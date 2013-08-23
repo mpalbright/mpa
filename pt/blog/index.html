@@ -1,14 +1,14 @@
 ---
-layout: default-en
+layout: default-pt
 title: blog
-root: ../
+root: ../../
 ---
-<h1>Blog Posts</h1>
+<h1>Postagens do Blog</h1>
 {% for post in site.posts %}
-	{% if post.layout == "post-en" %}
+	{% if post.layout == "post-pt" %}
       	<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
       	<p>{{ post.date | date_to_long_string }}</p>
       	<p>{{ post.intro }}</p>
-      	<p><a href="{{ post.url }}">Read more...</a></p>
+      	<p><a href="{{ post.url }}">Leia mais...</a></p>
 	{% endif %}
 {% endfor %}
